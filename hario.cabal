@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 5089bf8e3069c64059bc433e86b46e5708877cf3df1ea297c4cdf664f75ff9ad
+-- hash: 4c165b78f4594ae60cfff8d360951712ec941851ec1ae6c037160b6707da061c
 
 name:           hario
 version:        0.1.0.0
@@ -39,6 +39,26 @@ library
 executable hario-exe
   main-is: Main.hs
   other-modules:
+      Lib.Engine.Main
+      Lib.Engine.Types.Input
+      Lib.Engine.Types.Output
+      Lib.Engine.Types.Render
+      Lib.Engine.Types.Time
+      Lib.Entity.Types.Entity
+      Lib.Point.Types.Point
+      Lib.Store.Types.Action
+      Models.Hario
+      Store.Main
+      Store.Registry.Action
+      Store.Registry.Reducer
+      Store.Registry.Types.Action
+      Store.Registry.Types.State
+      Types.Actor
+      Types.Dimension
+      Types.Game
+      Types.Store
+      Types.Trait
+      Types.UID
       Paths_hario
   hs-source-dirs:
       app
