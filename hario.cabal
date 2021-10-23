@@ -1,0 +1,375 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 15d33a07b2463a9979fd34829f41ec460edc56bbc30449f618c471ab6417b957
+
+name:           hario
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/githubuser/hario#readme>
+homepage:       https://github.com/githubuser/hario#readme
+bug-reports:    https://github.com/githubuser/hario/issues
+author:         Author name here
+maintainer:     example@example.com
+copyright:      2021 Author name here
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/hario
+
+executable hario-exe
+  main-is: Main.hs
+  other-modules:
+      Assets.Image.Constant
+      Assets.Image.Main
+      Assets.Image.To
+      Assets.Image.Types
+      Assets.ImageResource.From
+      Assets.ImageResource.IO
+      Assets.ImageResource.Lib
+      Assets.ImageResource.Main
+      Assets.ImageResource.Types
+      Assets.Tile.From
+      Assets.Tile.Main
+      Assets.Tile.Types
+      Assets.TileLayer.From
+      Assets.TileLayer.Main
+      Assets.TileLayer.To
+      Assets.TileLayer.Types
+      Assets.Tilemap.Constants
+      Assets.Tilemap.From
+      Assets.Tilemap.Main
+      Assets.Tilemap.To
+      Assets.Tilemap.Types
+      Configs.App.From
+      Configs.App.Main
+      Configs.App.Types
+      Lib.Math.Main
+      Lib.Time.Main
+      Models.Acceleration.Constants
+      Models.Acceleration.From
+      Models.Acceleration.Main
+      Models.Acceleration.Types
+      Models.Actor.From
+      Models.Actor.Game
+      Models.Actor.Lib
+      Models.Actor.Main
+      Models.Actor.To
+      Models.Actor.Types
+      Models.ActorMap.From
+      Models.ActorMap.Game
+      Models.ActorMap.Lib
+      Models.ActorMap.Main
+      Models.ActorMap.To
+      Models.ActorMap.Types
+      Models.Area.Main
+      Models.Area.To
+      Models.Area.Types
+      Models.Block.From
+      Models.Block.Game
+      Models.Block.Main
+      Models.Block.To
+      Models.Block.Types
+      Models.Boundary.Lib
+      Models.Boundary.Main
+      Models.Boundary.Ordering
+      Models.Boundary.To
+      Models.Boundary.Types
+      Models.Cell.Main
+      Models.Collision.Main
+      Models.Collision.Types
+      Models.CollisionEvent.From
+      Models.CollisionEvent.Main
+      Models.CollisionEvent.Types
+      Models.Contact.Main
+      Models.Contact.Types
+      Models.Decoration.From
+      Models.Decoration.Game
+      Models.Decoration.Main
+      Models.Decoration.To
+      Models.Decoration.Types
+      Models.Dimension.From
+      Models.Dimension.Main
+      Models.Dimension.To
+      Models.Dimension.Types
+      Models.Direction.From
+      Models.Direction.Main
+      Models.Direction.To
+      Models.Direction.Types
+      Models.Force.Main
+      Models.Force.Types
+      Models.Frame.Types
+      Models.Friction.Constants
+      Models.Friction.From
+      Models.Friction.Main
+      Models.Friction.To
+      Models.Friction.Types
+      Models.GameCamera.From
+      Models.GameCamera.Game
+      Models.GameCamera.IO
+      Models.GameCamera.Lib
+      Models.GameCamera.Main
+      Models.GameCamera.To
+      Models.GameCamera.Types
+      Models.GameCommand.Constants
+      Models.GameCommand.From
+      Models.GameCommand.Main
+      Models.GameCommand.To
+      Models.GameCommand.Types
+      Models.GameEntity.Main
+      Models.GameEntity.Types
+      Models.GameEvent.From
+      Models.GameEvent.Main
+      Models.GameEvent.Types
+      Models.GameEventAddHandler.Main
+      Models.GameEventAddHandler.Types
+      Models.GameEventHandler.Main
+      Models.GameEventHandler.Types
+      Models.GameEventSource.From
+      Models.GameEventSource.Main
+      Models.GameEventSource.Types
+      Models.GameField.From
+      Models.GameField.Game
+      Models.GameField.Lib
+      Models.GameField.Main
+      Models.GameField.To
+      Models.GameField.Types
+      Models.GameGraphic.IO
+      Models.GameGraphic.Lib
+      Models.GameGraphic.Main
+      Models.GameGraphic.To
+      Models.GameGraphic.Types
+      Models.GameGraphicLayer.Main
+      Models.GameGraphicLayer.Types
+      Models.GameLoop.From
+      Models.GameLoop.Main
+      Models.GameMeta.Constants
+      Models.GameMeta.Lib
+      Models.GameMeta.Main
+      Models.GameMeta.Types
+      Models.GameNetwork.From
+      Models.GameNetwork.Main
+      Models.GameObject.From
+      Models.GameObject.Game
+      Models.GameObject.IO
+      Models.GameObject.Lib
+      Models.GameObject.Main
+      Models.GameObject.To
+      Models.GameObject.Types
+      Models.GameObjectDTO.Main
+      Models.GameObjectDTO.Types
+      Models.GameResource.From
+      Models.GameResource.Main
+      Models.GameResource.To
+      Models.GameResource.Types
+      Models.GameScene.Types
+      Models.GameState.From
+      Models.GameState.Game
+      Models.GameState.IO
+      Models.GameState.Lib
+      Models.GameState.Main
+      Models.GameState.To
+      Models.GameState.Types
+      Models.Ghost.Main
+      Models.Ghost.To
+      Models.Ghost.Types
+      Models.Goomba.From
+      Models.Goomba.Game
+      Models.Goomba.Lib
+      Models.Goomba.Main
+      Models.Goomba.To
+      Models.Goomba.Types
+      Models.GoombaAction.Constants
+      Models.GoombaAction.From
+      Models.GoombaAction.Lib
+      Models.GoombaAction.Main
+      Models.GoombaAction.Types
+      Models.GoombaGraphic.Constants
+      Models.GoombaGraphic.From
+      Models.GoombaGraphic.Lib
+      Models.GoombaGraphic.Main
+      Models.GoombaGraphic.To
+      Models.GoombaGraphic.Types
+      Models.Grid.From
+      Models.Grid.Main
+      Models.Grid.To
+      Models.Grid.Types
+      Models.GroundBlock.From
+      Models.GroundBlock.Game
+      Models.GroundBlock.Main
+      Models.GroundBlock.To
+      Models.GroundBlock.Types
+      Models.Hario.From
+      Models.Hario.Game
+      Models.Hario.Lib
+      Models.Hario.Main
+      Models.Hario.To
+      Models.Hario.Types
+      Models.HarioAction.Constants
+      Models.HarioAction.From
+      Models.HarioAction.Lib
+      Models.HarioAction.Main
+      Models.HarioAction.Types
+      Models.HarioGraphic.Constants
+      Models.HarioGraphic.From
+      Models.HarioGraphic.Lib
+      Models.HarioGraphic.Main
+      Models.HarioGraphic.To
+      Models.HarioGraphic.Types
+      Models.Input.From
+      Models.Input.Main
+      Models.Input.To
+      Models.Input.Types
+      Models.KeyboardEventData.From
+      Models.KeyboardEventData.Lib
+      Models.KeyboardEventData.Main
+      Models.KeyboardEventData.To
+      Models.KeyboardEventData.Types
+      Models.KeyState.Constants
+      Models.KeyState.From
+      Models.KeyState.Main
+      Models.KeyState.To
+      Models.KeyState.Types
+      Models.Level.Main
+      Models.Level.Show
+      Models.Level.To
+      Models.Level.Types
+      Models.LevelScene.From
+      Models.LevelScene.Game
+      Models.LevelScene.IO
+      Models.LevelScene.Lib
+      Models.LevelScene.Main
+      Models.LevelScene.To
+      Models.LevelScene.Types
+      Models.LevelTilemap.From
+      Models.LevelTilemap.Main
+      Models.LevelTilemap.To
+      Models.LevelTilemap.Types
+      Models.MapLayer.Main
+      Models.MapLayer.Types
+      Models.Momentum.Main
+      Models.Momentum.Types
+      Models.Motion.Constants
+      Models.Motion.Lib
+      Models.Motion.Main
+      Models.Motion.To
+      Models.Motion.Types
+      Models.PhysicalEntity.Lib
+      Models.PhysicalEntity.Main
+      Models.PhysicalEntity.To
+      Models.PhysicalEntity.Types
+      Models.PhysicalEntityMap.Lib
+      Models.PhysicalEntityMap.Main
+      Models.PhysicalEntityMap.To
+      Models.PhysicalEntityMap.Types
+      Models.PhysicalEvent.Main
+      Models.PhysicalEvent.Types
+      Models.PhysicalObject.Lib
+      Models.PhysicalObject.Main
+      Models.PhysicalObject.Ordering
+      Models.PhysicalObject.To
+      Models.PhysicalObject.Types
+      Models.PhysicalObjectDTO.Main
+      Models.PhysicalObjectDTO.Types
+      Models.PhysicalWorld.Lib
+      Models.PhysicalWorld.Main
+      Models.PhysicalWorld.To
+      Models.PhysicalWorld.Types
+      Models.Pipe.From
+      Models.Pipe.Game
+      Models.Pipe.Main
+      Models.Pipe.To
+      Models.Pipe.Types
+      Models.PipeBlock.From
+      Models.PipeBlock.Game
+      Models.PipeBlock.Main
+      Models.PipeBlock.To
+      Models.PipeBlock.Types
+      Models.Plane.Main
+      Models.Plane.Types
+      Models.Pole.From
+      Models.Pole.Game
+      Models.Pole.Main
+      Models.Pole.To
+      Models.Pole.Types
+      Models.Position.From
+      Models.Position.Lib
+      Models.Position.Main
+      Models.Position.To
+      Models.Position.Types
+      Models.QuestionBlock.From
+      Models.QuestionBlock.Game
+      Models.QuestionBlock.Lib
+      Models.QuestionBlock.Main
+      Models.QuestionBlock.To
+      Models.QuestionBlock.Types
+      Models.QuestionBlockGraphic.Constants
+      Models.QuestionBlockGraphic.From
+      Models.QuestionBlockGraphic.Lib
+      Models.QuestionBlockGraphic.Main
+      Models.QuestionBlockGraphic.To
+      Models.QuestionBlockGraphic.Types
+      Models.RigidBlock.From
+      Models.RigidBlock.Game
+      Models.RigidBlock.Main
+      Models.RigidBlock.To
+      Models.RigidBlock.Types
+      Models.Signal.From
+      Models.Signal.Main
+      Models.Solid.Lib
+      Models.Solid.Main
+      Models.Solid.To
+      Models.Solid.Types
+      Models.Sprite.Main
+      Models.Sprite.Types
+      Models.Static.Lib
+      Models.Static.Main
+      Models.Static.To
+      Models.Static.Types
+      Models.Velocity.Constants
+      Models.Velocity.From
+      Models.Velocity.Lib
+      Models.Velocity.Main
+      Models.Velocity.To
+      Models.Velocity.Types
+      Paths_hario
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , containers
+    , lens
+    , linear
+    , mtl
+    , random
+    , reactive-banana
+    , sdl2
+    , split
+    , text
+    , these
+    , time
+    , transformers
+    , uuid
+    , validation
+  default-language: Haskell2010
+
+test-suite hario-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_hario
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+  default-language: Haskell2010
